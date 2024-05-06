@@ -1,0 +1,10 @@
+<odoo>
+    <data>
+        <record id="menu_custom_sales_report" model="ir.ui.menu">
+            <field name="name">Custom Sales Report</field>
+            <field name="action" ref="custom_sales_report.action_custom_sales_report"/>
+            <field name="parent_id" ref="sale.sale_menu_root"/>
+            <field name="sequence" type="int">100</field>
+        </record>
+    </data>
+</odoo>

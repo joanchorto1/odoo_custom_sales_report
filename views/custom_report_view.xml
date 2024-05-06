@@ -1,0 +1,17 @@
+<odoo>
+    <data>
+        <record id="view_custom_sales_report_tree" model="ir.ui.view">
+            <field name="name">Custom Sales Report Tree View</field>
+            <field name="model">custom.sales.report</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="id" string="ID"/>
+                    <field name="user_id" string="Salesperson"/>
+                    <field name="state" string="State"/>
+                    <field name="state_count" string="State Count"/>
+                    <field name="total_amount" string="Total Amount"/>
+                </tree>
+            </field>
+        </record>
+    </data>
+</odoo>

@@ -1,0 +1,33 @@
+<odoo>
+    <template id="report_custom_sale_order">
+        <t t-call="web.html_container">
+            <t t-call="web.external_layout">
+                <div class="page">
+                    <h2>Custom Sales Report</h2>
+                    <table class="table table-condensed">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Salesperson</th>
+                                <th>State</th>
+                                <th>State Count</th>
+                                <th>Total Amount</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <t t-foreach="docs" t-as="line">
+                                <tr>
+                                    <td><t t-esc="line.id"/></td>
+                                    <td><t t-esc="line.user_id.display_name"/></td>
+                                    <td><t t-esc="line.get_state_display(line.state)"/></td>
+                                    <td><t t-esc="line.state_count"/></td>
+                                    <td><t t-esc="line.total_amount"/></td>
+                                </tr>
+                            </t>
+                        </tbody>
+                    </table>
+                </div>
+            </t>
+        </t>
+    </template>
+</odoo>

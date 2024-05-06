@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <template id="custom_report_saleorder_document" inherit_id="sale.report_saleorder_document">
+            <xpath expr="//h2" position="after">
+                <p>Number of Articles: <span t-field="doc.num_articles"/></p>
+                <p>Customer Email: <span t-field="doc.customer_email"/></p>
+            </xpath>
+        </template>
+    </data>
+</odoo>

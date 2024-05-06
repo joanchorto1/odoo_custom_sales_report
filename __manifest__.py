@@ -1,0 +1,21 @@
+{
+    'name': 'Custom Sales Report',
+    'version': '1.0',
+    'summary': 'Adds custom functionalities to sales module.',
+    'author': 'Joan Chorto',
+    'category': 'Sales',
+    'depends': ['base', 'sale'],
+    "data": [ 
+        "security/ir.model.access.csv",
+        "views/sale_order_report_extension.xml",
+        "views/sale_order_view_extension.xml",
+        'views/custom_report_view.xml',
+        'views/custom_report_action.xml',
+        'views/custom_report_menu.xml',
+        'views/custom_report_report.xml',
+        'reports/custom_reports_template.xml',
+    ],
+    'installable': True,
+    'auto_install': False,
+    'application': True,
+}
